@@ -1,8 +1,13 @@
-export enum ActionTypes {
+export enum SearchActionTypes {
     SEARCH_TEXT_CHANGE = 'SEARCH_TEXT_CHANGE',
     SEARCH_TEXT_CLEAR = 'SEARCH_TEXT_CLEAR',
     SEARCH_DATA_CHANGE = 'SEARCH_DATA_CHANGE',
     ADD_SEARCH_ITEM = 'ADD_SEARCH_ITEM',
     CLEAR_HISTORY = 'CLEAR_HISTORY',
     SEARCH_ERROR = 'SEARCH_ERROR',
+}
+
+export enum UserActionTypes {
+    USER_DATA_CHANGE = 'USER_DATA_CHANGE',
+    USER_ERROR = 'USER_ERROR',
 }
