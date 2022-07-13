@@ -22,9 +22,12 @@ export default function SearchForm(){
     }
     return (
         <form className={classes.searchForm} onSubmit={(e: React.SyntheticEvent)=>onSearch(e, searchText)}>
-            <input className={classes.searchFormInput} placeholder='Enter Username to Search' type='text' value={searchText} onChange={onSearchTermChange} />
+            <div className={classes.searchInputWrapper}>
+                <input className={classes.searchFormInput} placeholder='Enter Username to Search' type='text' value={searchText} onChange={onSearchTermChange} />
+                {searchText.length>0?<button className={classes.searchClearButton} type="button" onClick={clearSearch}>X</button>:null}
+            </div>
+            
             <button className={classes.searchSubmitButton} type="submit">search</button>
-            <button className={classes.searchClearButton} type="button" onClick={clearSearch}>clear</button>
         </form>
     )
 }
