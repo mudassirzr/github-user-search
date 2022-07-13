@@ -13,6 +13,7 @@ import {
 import HistoryRoute from 'routes/history';
 import UserDetailsRoute from 'routes/userDetails';
 import Navigation from 'components/navigation';
+import NotFound from 'components/notFound';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -26,6 +27,7 @@ root.render(
           <Route path="/" element={<Home />}/>
           <Route path="history" element={<HistoryRoute />} />
           <Route path="user/:userId" element={<UserDetailsRoute />} />
+          <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
     </Provider>

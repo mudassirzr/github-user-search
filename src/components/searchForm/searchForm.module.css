@@ -1,0 +1,31 @@
+.searchForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.searchFormInput {
+    border: 0.2rem solid #f5f5f5;
+}
+.searchSubmitButton {
+    background-color: #222;
+    color: #fff;
+    border: 0;
+}
+.searchClearButton {
+    background-color: #fff;
+    color: #222;
+    border: 0;
+}
+
+.searchFormInput, .searchSubmitButton, .searchClearButton {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}

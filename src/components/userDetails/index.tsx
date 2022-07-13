@@ -11,7 +11,7 @@ import SkeletonLoader from "./skeletonLoader";
 export default function UserDetails(props : UserDetailsProps)  {
     const [isLoading, setIsLoading] = useState<Boolean>(false);
     const users : UserDetailsObject  = useSelector((state: State) => state.users, shallowEqual);
-    const search : searchState  = useSelector((state: State) => state.search, shallowEqual);
+    
     const dispatch = useDispatch();
     const { setUserDetails, setUserError } = bindActionCreators(userActionCreators, dispatch);
     const { userId } = props;
@@ -71,11 +71,11 @@ export default function UserDetails(props : UserDetailsProps)  {
                 </div>
             )
         }
-        return <>Loading...</>
+        return <SkeletonLoader />
     },[users, id, isLoading]);
     return (
         <>
-            <h1>Github user <span className={classes.headingSpan}>@{search.searchText}</span></h1>
+            <h1>Github user <span className={classes.headingSpan}>@{userId}</span></h1>
             {renderUserDetails()}
         </>
     )

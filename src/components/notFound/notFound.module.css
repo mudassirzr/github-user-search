@@ -1,0 +1,12 @@
+.notFoundHeading {
+    font-size: 10rem;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.notFoundSubHeading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0rem;
+    text-align: center;
+}

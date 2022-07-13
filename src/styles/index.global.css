@@ -30,6 +30,9 @@ h2 {
 h3 {
   font-size: 2rem;
 }
+button, a {
+  cursor: pointer;
+}
 
 a {
   text-decoration: none;
@@ -37,7 +40,19 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.homeHeaderText, .homeHeaderSubText {
+  text-align: center;
+}
+.homeHeaderText {
+  font-size: 3rem;
+  margin-bottom: 0rem;
 
+}
+.homeHeaderSubText {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
 .shimmerLoader {
   background: #f6f7f8;
   background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
