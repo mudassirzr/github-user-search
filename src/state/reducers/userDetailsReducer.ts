@@ -7,7 +7,7 @@ const reducer = (state: UserDetailsObject = initialState, action: UserActions) =
     switch (action.type) {
         case UserActionTypes.USER_DATA_CHANGE:
             let newUser:UserDetailsObject = {}
-            newUser[action.payload.login] = action.payload 
+            newUser[action.payload.login.toLocaleLowerCase()] = action.payload 
             return {...state, ...newUser};
         case UserActionTypes.USER_ERROR:
             const errorUser:UserDetailsObject = {}

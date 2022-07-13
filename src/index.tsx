@@ -11,7 +11,7 @@ import {
   Route,
 } from "react-router-dom";
 import HistoryRoute from 'routes/history';
-import UserDetails from 'routes/userDetails';
+import UserDetailsRoute from 'routes/userDetails';
 import Navigation from 'components/navigation';
 
 const root = ReactDOM.createRoot(
@@ -25,7 +25,7 @@ root.render(
       <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="history" element={<HistoryRoute />} />
-          <Route path="user/:userId" element={<UserDetails />} />
+          <Route path="user/:userId" element={<UserDetailsRoute />} />
       </Routes>
     </BrowserRouter>
     </Provider>

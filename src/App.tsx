@@ -20,10 +20,10 @@ function Home() {
     addSearchTermToHistory(text);
     navigate(`/user/${text}`);
   }
-  
   return (
     <div>
-      <h1>Github users search</h1>
+      <h1>Lookup Github User Details</h1>
+      <p>type a github username to check full details of the user!</p>
       <form onSubmit={(e: React.SyntheticEvent)=>onSearch(e, searchText)}>
         <input placeholder='Enter Username to Search' type='text' value={searchText} onChange={onSearchTermChange} />
         <button type="submit">search</button>
