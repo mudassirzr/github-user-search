@@ -1,7 +1,7 @@
 .searchForm {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   flex-wrap: wrap;
   background-color: #fff;
   border-radius: 5px;
@@ -12,6 +12,7 @@
 
 .searchFormInput {
     border: 0.2rem solid #f5f5f5;
+    width: 100%;
 }
 .searchSubmitButton {
     background-color: #222;
@@ -28,4 +29,13 @@
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+    .searchFormInput {
+        width: auto;
+    }
+    .searchForm {
+        justify-content: center;
+    }
 }
