@@ -13,7 +13,6 @@ const reducer = (state: UserDetailsObject = initialState, action: UserActions) =
             const errorUser:UserDetailsObject = {}
             errorUser[action.payload.login] = action.payload 
             return {...state, ...errorUser}
-            // return {...state, data: action.payload};
         default:
             return state;
     }
