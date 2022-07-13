@@ -28,7 +28,9 @@ export default function History() {
         {
           history?.length > 0 ? (
             <>
-            <button onClick={onClearHistory}>Clear History</button>
+            <div>
+              <button className={classes.clearHistoryBtn} onClick={onClearHistory}>Clear History</button>
+            </div>
             {
               history.map((term: historyItem, i: number) => (
                   <li className={classes.historyItem} key={i} onClick={() => onHistoryClick(term.searchTerm)}>
